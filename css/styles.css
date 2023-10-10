@@ -1,24 +1,506 @@
-body {
+* {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header section - START */
+@media screen and (min-width:641px) {
+    .mobile {
+        display: none;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    float: right;
+    padding: 24px;
+}
+
+.sitenav {
+    display: flex;
+    align-items: right;
+    list-style: none;
+    float: left;
+    text-align: left;
+    padding-right: 8px;
+}
+
+.sitenav li a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    padding-right: 16px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    float: left;
+    padding-left: 24px;
+}
+
+.logo_txt_colmar,
+.logo_txt_acedemy {
+    font-size: 18px;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.logo_txt_colmar {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+}
 
 /* header section - END */
 
 
 /* main section - START */
 
-    /* topbanner */
+/* topbanner */
+.topbanner {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    padding-top: 64px;
+}
 
-    /* midbanner */
+.topbanner img {
+    width: 60%;
+    padding: 32px 24px 32px 24px;
+    /* top right bottom left */
+}
 
-    /* bottom banner */
+.topbanner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topbanner_text h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.topbanner_text h2 {
+    font-size: x-large;
+    margin-top: 30px;
+}
+
+.topbanner_text button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 0px 8px 0px;
+    /*top right bottom left*/
+    width: 90%;
+    height: 10%;
+    font-size: large;
+    margin: 30px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+/* midbanner */
+.midbanner {
+    color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.midbanner_left {
+    width: 60%;
+    max-width: 60%;
+    display: inline-block;
+    padding: 32px 0px 32px 24px;
+    /* top right bottom left*/
+}
+
+.midbanner img {
+    max-width: 100%;
+}
+
+.midbanner_right {
+    width: 40%;
+    max-width: 35%;
+    display: inline-block;
+    border-left: 1px solid rgb(0, 0, 0, 0.2);
+    padding-top:32px;
+}
+
+.midbanner h1 {
+    font-weight: bold;
+    font-size: large;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.midbanner p {
+    font-size: medium;
+}
+
+.nametitle {
+    padding-bottom: 32px;
+}
+
+.orientation,
+.campus,
+.guest {
+    display: flex;
+    word-break: break-all;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.orientation:hover,
+.campus:hover,
+.guest:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.orientation img,
+.campus img,
+.guest img {
+    max-width: 35%;
+    max-height: auto;
+    object-fit: cover;
+    padding: 16px;
+}
+
+.orientation_date h2,
+.our_campus h2,
+.guest_lecture h2 {
+    font-weight: bold;
+}
+
+.orientation_date p,
+.our_campus p,
+.guest_lecture p {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.readmore {
+    color: rgba(27, 3, 104, 0.7);
+}
+
+/* bottom banner */
+
+.bottombanner {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 16px;
+}
+
+.bottombanner h1 {
+    padding-top: 32px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.start_learning {
+    display: flex;
+    padding-top: 16px;
+}
+
+.start_learning li {
+    width: 33%;
+    margin: 16px;
+    list-style: none;
+}
+
+.software_engineering,
+.computer_art,
+.design,
+.data,
+.business,
+.marketing {
+    background-color: white;
+}
+
+.software_engineering img,
+.computer_art img,
+.design img,
+.data img,
+.business img,
+.marketing img {
+    width: 100%;
+    height: auto;
+}
+
+.software_engineering h3,
+.computer_art h3,
+.design h3,
+.data h3,
+.business h3,
+.marketing h3 {
+    padding: 8px 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    font-size: x-large;
+}
+
+.software_engineering p,
+.computer_art p,
+.design p,
+.data p,
+.business p,
+.marketing p {
+    padding: 8px 16px;
+}
+
+.bottomtext {
+    margin-bottom: 24px;
+}
+
+/* thesis banner */
+
+.thesisexhibit {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding:32px;
+}
+
+.thesisbanner {
+    color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.thesisbanner_left {
+    width: 60%;
+    max-width: 60%;
+    display: inline-block;
+    padding:0px 24px;
+    /* top right bottom left*/
+}
+
+.thesisbanner video {
+    max-width: 100%;
+}
+
+.thesisbanner_right {
+    width: 40%;
+    max-width: 35%;
+    display: inline-block;
+}
+
+.thesisbanner h1 {
+    font-weight: bold;
+    font-size: large;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.thesisbanner p {
+    font-size: medium;
+    padding-bottom: 32px;
+}
+
+.fisma,
+.nowandthen {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.fisma:hover,
+.nowandthen:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fisma img,
+.nowandthen img {
+    max-width: 35%;
+    padding:16px;
+}
+
+.fisma_text, .nowandthen_text {
+    max-width: 65%;
+    padding:0px 16px;
+}
+
+.nowandthen_text h2,
+.fisma_text h2 {
+    font-weight: bold;
+    font-size: x-large;
+    padding-bottom: 16px;
+}
+
+.fismae_text p,
+.nowandthen_text p {
+    font-size: large;
+}
 
 /* main section - END */
 
 
 /* footer section - START */
+footer div {
+    padding-left: 24px;
+    padding-top: 16px;
+    float:left;
+    display: flex;
+    justify-content:space-between;
+}
 
+.tp {
+    float:right;
+    padding-top:16px;
+    display: inline-block;
+}
+
+.tp li {
+    display:inline;
+    padding-right:16px;
+    padding-bottom: 24px;
+}
+}
 /* footer section - END */
+
+/* mobile type */
+
+@media screen and (max-width: 640px) {
+    .desktop {
+        display: none;
+    }
+header {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 64px;
+    position: fixed;
+    z-index:100;
+    background-color: white;
+    top:0;
+}
+
+.menu {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.top {
+    padding-top:65px;
+}
+
+.top img{
+    width:100%;
+}
+.top_text{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:32px 16px;
+    color: rgba(0, 0, 0, 0.7)
+}
+.top h1 {
+    font-size:xx-large;
+    padding-bottom:32px;
+}
+
+.top p {
+    font-size: large;
+    padding-bottom: 24px;
+}
+
+.top_text button{
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: content-box;
+    width: 80%;
+    height: 30px;
+    margin: auto 10%;
+    color:white;
+}
+
+.mid {
+    width: 100%;
+    padding:16px;
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.mid_orientation_text, .mid_campus_text {
+    padding-bottom: 64px;
+    padding-left: 16px;
+}
+
+.mid_guest_text{
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.mid img, .mid img, .mid img {
+    max-width:100%;
+    width: 90%;
+}
+
+.mid h1, .mid h1, .mid h1  {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.mid p, .mid p, .mid p  {
+    padding-bottom: 8px;
+}
+.learning {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.start_learning_mobile {
+    list-style: none;
+    padding-bottom: 32px;
+}
+
+.start_learning_mobile li{
+    margin:0px 0px 8px -24px;
+    color:rgba(0, 0, 0, 0.7);
+    padding:16px 0px 24px 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: xx-large;
+    font-weight: bold;
+    max-width: 95%;
+}
+
+.thesis_mobile {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.thesis_mobile video {
+    max-width:90%;
+    height: auto;
+    padding:16px 32px 24px 16px;
+}
+
+.mobile {
+    float:left;
+    padding-left:16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+}
