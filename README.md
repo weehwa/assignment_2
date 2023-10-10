@@ -1,2 +1,3 @@
-# week3htmlcss
-Set up the landing page structure - include comments
+# Capstone Project for Codeacedemy
+
+Build a website COLMAR Academy based on the requirement 
