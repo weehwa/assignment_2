@@ -4,7 +4,7 @@
 }
 
 /* header section - START */
-@media screen and (min-width:641px) {
+@media screen and (min-width:640px) {
     .mobile {
         display: none;
 }
@@ -384,7 +384,7 @@ footer div {
     }
 header {
     display:flex;
-    width: 100%;
+    width: 99%;
     justify-content: space-around;
     height: 64px;
     position: fixed;
@@ -398,6 +398,7 @@ header {
     align-items: center;
     width: 100%;
     display: flex;
+    padding-right:16px;
 }
 
 .top {
