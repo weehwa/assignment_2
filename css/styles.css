@@ -441,11 +441,13 @@ header {
 .mid_orientation_text, .mid_campus_text {
     padding-bottom: 64px;
     padding-left: 16px;
+    max-width:100%;
 }
 
 .mid_guest_text{
     padding-bottom: 32px;
     padding-left: 16px;
+    max-width:100%;
 }
 
 .mid img, .mid img, .mid img {
