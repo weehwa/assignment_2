@@ -470,6 +470,7 @@ header {
     padding-bottom: 16px;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
+    max-width:95%;
 }
 
 .start_learning_mobile {
@@ -492,6 +493,7 @@ header {
     padding-bottom: 16px;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
+    max-width:95%;
 }
 
 .thesis_mobile video {
